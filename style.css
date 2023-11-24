@@ -1,0 +1,37 @@
+#field td {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	text-align: center;
+	font-weight: bold;
+    font-size: 100px;
+    user-select: none;
+}
+
+#field td:hover{
+    cursor: pointer;
+}
+
+table{
+    margin: 0 auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+div{
+    font-size: 40px;
+}
+
+.tableDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#draw{
+    margin: 0 auto;
+}
+

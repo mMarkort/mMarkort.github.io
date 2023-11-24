@@ -1,92 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
     <body>
-        <div>
-            <h1>Массивы в JavaScript</h1>
-            <p>Создайте массив с числами. Выведите его на экран с помощью функции alert, а также выведите его в консоль с помощью console.log.</p>
-            <button class="btn btn-success" id="68zad">68 zad</button>
-        </div>
-        <div>
-            <h1>Получение элементов массивов в JavaScript</h1>
-            <p>Создайте массив с элементами 1, 2, 3. Выведите на экран каждый из этих элементов. <br> Выведите на экран сумму элементов этого массива. <br>  Выведите с помощью этого массива следующую строку:
-                'a+b+c+d'</p>
-            <button class="btn btn-success" id="69zad">69 zad</button>
-        </div>
-        <div>
-            <h1>Длина массива в JavaScript</h1>
-            <p>Создайте массив с произвольными элементами. Выведите на экран количество элементов в этом массиве. <br> Создайте массив с произвольными элементами. Выведите на экран последний элемент этого массива.</p>
-            <button class="btn btn-success" id="70zad">70 zad</button>
-        </div>
-        <div>
-            <h1>Изменение элементов массива в JavaScript</h1>
-            <p>Создайте массив с элементами 'a', 'b', 'c'. Запишите вместо первого элемента число 1, вместо второго - 2, вместо третьего - 3. </p>
-            <button class="btn btn-success" id="71zad">72 zad</button>
-        </div>
-        <div>
-            <h1>Перезапись элементов массива в JavaScript</h1>
-            <p>Создайте массив с числами. Прибавьте к каждому элементу массива число 3. Выведите на экран измененный массив. </p>
-            <button class="btn btn-success" id="72zad">72 zad</button>
-        </div>
-        <div>
-            <h1>Инкремент и декремент элементов массива в JavaScript</h1>
-            <p>Создайте массив с элементами 1, 2 и 3. С помощью оператора ++ увеличьте каждый элемент массива на единицу. </p>
-            <button class="btn btn-success" id="73zad">73 zad</button>
-        </div>
-        <div>
-            <h1>Добавление элементов по ключам JavaScript</h1>
-            <p>С помощью описанного приема создайте массив с элементами 1, 2 и 3. <br> Добавьте ему в конец элементы 4 и 5. </p>
-            <button class="btn btn-success" id="74zad">74 zad</button>
-        </div>
-        <div>
-            <h1>Разреженные массивы в JavaScript</h1>
-            <p>Узнайте длину следующего массива:<br>
-                let arr = [];<br>
-                
-                arr[3] = 'a';<br>
-                arr[8] = 'b'; </p>
-            <button class="btn btn-success" id="75zad">75 zad</button>
-        </div>
-        <div>
-            <h1>Добавление элементов через push в JavaScrip</h1>
-            <p>Пусть дан такой массив:<br>
-                let arr = [1, 2, 3];<br>
-                
-                Добавьте ему в конец элементы 4 и 5. </p>
-            <button class="btn btn-success" id="76zad">76zad</button>
-        </div>
-        <div>
-            <h1>Ключи массивов из переменных в JavaScript</h1>
-            <p>Выведите на экран элемент, ключ которого хранится в переменной key. <br> 
+        <div class="main">
+            <div id="XX">
+                X: 0
+            </div>
 
-                Найдите сумму элементов, ключи которых хранятся в наших переменных. </p>
-            <button class="btn btn-success" id="77zad">77 zad</button>
-        </div>
-        <div>
-            <h1>Оператор delete в массивах в JavaScript</h1>
-            <p>Удалите из него два элемента. Проверьте, какое станет значение свойства length после этого. </p>
-            <button class="btn btn-success" id="78zad">78 zad</button>
-        </div>
-        <div>
-            <h1>Поиск ошибок в коде с массивами JavaScript</h1>
-            <p> Код должен вывести последний элемент массива:<br>
-                let arr = [1, 2, 3, 4, 5];<br>
-                console.log(arr[arr.length]);</p>
-            <p> Код должен найти сумму элементов массива:<br>
-                let arr = [1, 2, 3, 4, 5];<br>
-                console.log(arr[1] + arr[2] + arr[3] + arr[4] + arr[5]);</p>
-            <p> Код должен вывести длину массива:<br>
-                let arr = {1, 2, 3, 4, 5};<br>
-                console.log(arr.length]);</p>
-            <p> Код должен вывести длину массива:<br>
-                let arr = [1, 2, 3, 4, 5];<br>
-                console.log(arr.lenght);</p>
-            <button class="btn btn-success" id="79zad">79 zad</button>
-        </div>
+            <div class="tableDiv">
+                <div id="Turn">
+                    Turn: X
+                </div>
+                <table id="field">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div id="draw">
+                    Draw: 0
+                </div>
+            </div>
 
+            <div id="OO">
+                O: 0
+            </div>
+        </div>
         <script src="scripts.js"></script>
     </body>
 </html>
